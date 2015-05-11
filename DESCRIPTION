@@ -1,0 +1,13 @@
+Package: abctools
+Type: Package
+Title: Tools for ABC analyses
+Version: 1.0
+Date: 16/12/14
+Authors@R: c(person("Matt","Nunes",role=c("aut","cre"),
+        email="m.nunes@lancaster.ac.uk"),person("Dennis", "Prangle",
+        role="aut",email="d.b.prangle@reading.ac.uk"))
+Description: Tools for approximate Bayesian computation including summary statistic selection and assessing coverage
+Depends: R (>= 2.10), abc, abind, parallel, plyr
+Suggests: ggplot2
+License: GPL (>= 2)
+LazyLoad: yes
