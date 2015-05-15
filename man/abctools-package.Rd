@@ -8,8 +8,8 @@
 \tabular{ll}{
 Package: \tab abctools\cr
 Type: \tab Package\cr
-Version: \tab 0.4\cr
-Date: \tab 16-12-2014\cr
+Version: \tab 1,0.1\cr
+Date: \tab 15-05-2015\cr
 License: \tab GPL-2\cr
 LazyLoad: \tab yes\cr
 }
