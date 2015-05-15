@@ -8,7 +8,7 @@
 \tabular{ll}{
 Package: \tab abctools\cr
 Type: \tab Package\cr
-Version: \tab 1,0.1\cr
+Version: \tab 1.0.1\cr
 Date: \tab 15-05-2015\cr
 License: \tab GPL-2\cr
 LazyLoad: \tab yes\cr
@@ -31,9 +31,10 @@ Nunes, M. A. and Balding, D. J. (2010) On Optimal Selection of Summary Statistic
 
 Details of ABC coverage methods appear in:
 
-Prangle D., Blum M. G. B., Popovic G., Sisson S. A. (2013) Diagnostic
+Prangle D., Blum M. G. B., Popovic G., Sisson S. A. (2014) Diagnostic
 tools of approximate Bayesian computation using the coverage
-property. \emph{(preprint)} \url{arxiv.org/abs/1301.3166}
+property. \emph{Australian and New Zealand Journal of Statistics}
+\bold{56}, Issue 4, 309--329.
 }
 \keyword{
   package

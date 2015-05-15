@@ -136,9 +136,10 @@ covstats.mc(raw, index, diagnostics = c("freq", "loglik.binary",
   requested but there are too few acceptances to compute it.
 }
 \references{
-  Prangle D., Blum M. G. B., Popovic G., Sisson S. A. (2013) Diagnostic
+  Prangle D., Blum M. G. B., Popovic G., Sisson S. A. (2014) Diagnostic
   tools of approximate Bayesian computation using the coverage
-  property. \emph{(preprint)} \url{arxiv.org/abs/1301.3166}
+  property. \emph{Australian and New Zealand Journal of Statistics}
+  \bold{56}, Issue 4, 309--329.
 }
 \author{
 Dennis Prangle

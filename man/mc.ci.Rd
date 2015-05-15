@@ -67,9 +67,10 @@ bintype=c("interval", "quantile"), bw=FALSE, ...)
 }
 
 \references{
-  Prangle D., Blum M. G. B., Popovic G., Sisson S. A. (2013) Diagnostic
+  Prangle D., Blum M. G. B., Popovic G., Sisson S. A. (2014) Diagnostic
   tools of approximate Bayesian computation using the coverage
-  property. \emph{(preprint)} \url{arxiv.org/abs/1301.3166}
+  property. \emph{Australian and New Zealand Journal of Statistics}
+  \bold{56}, Issue 4, 309--329.
 }
 
 \author{
