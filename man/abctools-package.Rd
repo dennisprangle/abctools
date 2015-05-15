@@ -3,7 +3,7 @@
 \alias{abctools}
 \docType{package}
 \title{Tools for ABC analyses}
-\description{Tools for approximate Bayesian computation including summary statistic selection and assessing coverage}
+\description{Tools for approximate Bayesian computation including summary statistic selection and assessing coverage.}
 \details{
 \tabular{ll}{
 Package: \tab abctools\cr
