@@ -8,7 +8,7 @@ Authors@R: c(person("Matt","Nunes",role=c("aut","cre"),
         role="aut",email="d.b.prangle@reading.ac.uk"))
 Description: Tools for approximate Bayesian computation including summary statistic selection and assessing coverage.
 Depends: R (>= 2.10), abc, abind, parallel, plyr
-Suggests: ggplot2
+Suggests: ggplot2, abc.data
 License: GPL (>= 2)
 LazyLoad: yes
 URL: http://github.com/dennisprangle/abctools
