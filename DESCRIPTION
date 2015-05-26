@@ -1,8 +1,8 @@
 Package: abctools
 Type: Package
 Title: Tools for ABC analyses
-Version: 1.0.1
-Date: 15/05/15
+Version: 1.0.2
+Date: 26/05/15
 Authors@R: c(person("Matt","Nunes",role=c("aut","cre"),
         email="m.nunes@lancaster.ac.uk"),person("Dennis", "Prangle",
         role="aut",email="d.b.prangle@reading.ac.uk"))
