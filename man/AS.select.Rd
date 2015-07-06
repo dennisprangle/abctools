@@ -10,7 +10,7 @@ This function uses approximate sufficiency to assess subsets of summary statisti
 \usage{
 AS.select(obs, param, sumstats, obspar=NULL, abcmethod=abc, 
 grid=10, inturn=TRUE, limit=ncol(sumstats), allow.none=FALSE, 
-do.err=FALSE, final.dens=FALSE, errfn=rsse,...)
+do.err=FALSE, final.dens=FALSE, errfn=rsse, trace=TRUE, ...)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -27,6 +27,7 @@ do.err=FALSE, final.dens=FALSE, errfn=rsse,...)
 %  \item{sumsubs}{an optional index into the summary statistics to limit summary selection to a specific subset of summaries.}
   \item{final.dens}{a boolean value indicating whether the posterior sample should be returned.}
   \item{errfn}{an error function to assess ABC inference performance.}
+  \item{trace}{whether to show progress messages.}
   \item{\dots}{any other optional arguments to the ABC inference procedure (e.g. arguments to the \code{abc} function).}
 }
 \details{The summary selection procedure works by sequentially testing randomly chosen statistics for inclusion, using the ratio of ABC posterior samples to determine whether a statistic is added.  Since adding a statistic may result in a suboptimal subset of summaries, the included statistics are then individually dropped and retested, to determine whether a smaller subset of statistics is equally / more informative than the accepted set of statistics.}
