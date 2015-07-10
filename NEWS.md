@@ -1,3 +1,7 @@
+##v1.0.3
+
+The AS.select function now has a `trace` argument and improved trace output when it is set to true.
+
 ##v1.0.2
 
 The musigma2 dataset has been moved from the abc package to abc.data. Dependencies have been changed to take this into account.
