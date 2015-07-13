@@ -1,0 +1,14 @@
+citHeader("To cite abctools in publications use:")
+
+citEntry(entry = "Unpublished",
+  title        = "abctools: An {R} package for tuning {Approximate Bayesian Computation} analyses",
+  author       = personList(as.person("Matthew A. Nunes"),
+                   as.person("Dennis Prangle")),
+  year         = "2015",
+  note = "Forthcoming",
+
+  textVersion  =
+  paste("Matthew A Nunes, Dennis Prangle (2015).",
+        "abctools: An R package for tuning Approximate Bayesian Computation analyses.",
+        "Forthcoming.")
+)
