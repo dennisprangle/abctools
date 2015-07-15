@@ -3,4 +3,7 @@ export(AS.select, AS.test, mincrit, nn.ent, rsse, saABC, selectsumm, semiauto.ab
 export(combmat, fillcomb)
 useDynLib(abctools)
 import(abc,abind,plyr,parallel)
+import(stats)
+import(utils)
+import(graphics)
 
