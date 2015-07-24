@@ -124,8 +124,10 @@ else{	# cbind all transformed statistics together.  There is probably a more eff
 
 sa <- saABC(sa.param,sumstats.tr[tobuild,],plot=plot)
 
-ss.sa <- sumstats.tr %*% t(sa$B)
-obs.sa <-  obs.tr %*% t(sa$B)
+B <- sa$B
+B[is.na(B)] <- 0 ##NAs may exist due to collinearity of sumstats.tr[tobuild,] but can safely be set to zero
+ss.sa <- sumstats.tr %*% t(B)
+obs.sa <-  obs.tr %*% t(B)
 
 if(verbose){
 	cat("Doing ABC with sample size:",size2,"\n")
