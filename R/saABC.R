@@ -31,7 +31,7 @@ saABC <- function(theta, X, plot=TRUE) {
     B[i,] <- reg$coefficients[-1]
     BICs[i] <- AIC(reg, k=log(n))
   }
-  if (any(is.na(B))) warning("Linear regression failed: ill-conditioning?")
+  if (any(is.na(B))) warning("Linear regression problems: ill-conditioning?")
   names(B0) <- parnames
   names(BICs) <- parnames
   rownames(B) <- parnames
