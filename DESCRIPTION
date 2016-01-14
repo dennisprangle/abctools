@@ -11,5 +11,5 @@ Depends: R (>= 2.10), abc, abind, parallel, plyr
 Suggests: ggplot2, abc.data
 License: GPL (>= 2)
 LazyLoad: yes
-URL: http://github.com/dennisprangle/abctools
-BugReports: http://github.com/dennisprangle/abctools/issues
+URL: https://github.com/dennisprangle/abctools
+BugReports: https://github.com/dennisprangle/abctools/issues
