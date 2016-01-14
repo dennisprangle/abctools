@@ -10,7 +10,7 @@ Package: \tab abctools\cr
 Type: \tab Package\cr
 Version: \tab 1.0.4\cr
 Date: \tab 24-07-2015\cr
-License: \tab GPL-2\cr
+License: \tab GPL-2 | GPL-3\cr
 LazyLoad: \tab yes\cr
 }
 
