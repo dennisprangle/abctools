@@ -136,6 +136,10 @@ covstats.mc(raw, index, diagnostics = c("freq", "loglik.binary",
   requested but there are too few acceptances to compute it.
 }
 \references{
+  Nunes, M. A. and Prangle, D. (2016) abctools: an R package for tuning
+  approximate Bayesian computation analyses. \emph{The R Journal}
+  \bold{7}, Issue 2, 189--205.
+  
   Prangle D., Blum M. G. B., Popovic G., Sisson S. A. (2014) Diagnostic
   tools of approximate Bayesian computation using the coverage
   property. \emph{Australian and New Zealand Journal of Statistics}

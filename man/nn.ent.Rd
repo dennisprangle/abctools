@@ -15,6 +15,9 @@ nn.ent(th, k=4)
 \details{The sample entropy gives a measure of information in a (posterior) sample, or lack of it.}
 \value{ The k nearest neighbour entropy from the sample.}
 \references{
+Nunes, M. A. and Prangle, D. (2016) abctools: an R package for tuning
+approximate Bayesian computation analyses. \emph{The R Journal}
+\bold{7}, Issue 2, 189--205.\cr\cr  
 Singh, H. et al. (2003) Nearest neighbor estimates of entropy. \emph{Am. J. Math. Man. Sci.},\bold{23}, 301--321.\cr\cr
 Shannon, C. E. and Weaver, W. (1948) A mathematical theory of communication. \emph{Bell Syst. Tech. J.}, \bold{27}, 379--423.
 }

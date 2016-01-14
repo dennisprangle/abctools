@@ -9,7 +9,7 @@
 Package: \tab abctools\cr
 Type: \tab Package\cr
 Version: \tab 1.0.4\cr
-Date: \tab 24-07-2015\cr
+Date: \tab 14-01-2016\cr
 License: \tab GPL-2 | GPL-3\cr
 LazyLoad: \tab yes\cr
 }
@@ -20,7 +20,13 @@ LazyLoad: \tab yes\cr
 Maintainer: Matthew Nunes <m.nunes@lancaster.ac.uk>
 }
 \references{
-For details on methods for summary statistics selection, see
+This package is described in:
+
+Nunes, M. A. and Prangle, D. (2016) abctools: an R package for tuning
+approximate Bayesian computation analyses. \emph{The R Journal}
+\bold{7}, Issue 2, 189--205.
+  
+For details on methods for summary statistics selection, see:
 
 Blum, M. G. B, Nunes, M. A., Prangle, D. and Sisson, S. A. (2013) A
 comparative review of dimension reduction methods in approximate

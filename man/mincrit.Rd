@@ -43,7 +43,13 @@ final.dens = FALSE, errfn = rsse, ...)
   \item{sumsubs}{an index into the subsets considered during the algorithm.}
 }
 \references{
-Nunes, M. A. and Balding, D. J. (2010) On Optimal Selection of Summary Statistics for Approximate Bayesian Computation.  \emph{Stat. Appl. Gen. Mol. Biol.} \bold{9}, Iss. 1, Art. 34.
+Nunes, M. A. and Balding, D. J. (2010) On Optimal Selection of Summary
+Statistics for Approximate Bayesian Computation.
+\emph{Stat. Appl. Gen. Mol. Biol.} \bold{9}, Iss. 1, Art. 34.
+
+Nunes, M. A. and Prangle, D. (2016) abctools: an R package for tuning
+approximate Bayesian computation analyses. \emph{The R Journal}
+\bold{7}, Issue 2, 189--205.
 }
 \author{Matt Nunes}
 %\note{

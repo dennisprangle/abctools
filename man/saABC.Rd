@@ -66,7 +66,10 @@ comparative review of dimension reduction methods in approximate
 Bayesian computation. \emph{Stat. Sci.} \bold{28}, Issue 2, 189--208.\cr\cr
 Fearnhead, P. and Prangle, D. (2012) Constructing summary statistics for approximate Bayesian computation: 
 semi-automatic approximate Bayesian
-computation. \emph{J. R. Stat. Soc. B} \bold{74}, Part 3, 1--28.
+computation. \emph{J. R. Stat. Soc. B} \bold{74}, Part 3, 1--28.\cr\cr
+Nunes, M. A. and Prangle, D. (2016) abctools: an R package for tuning
+approximate Bayesian computation analyses. \emph{The R Journal}
+\bold{7}, Issue 2, 189--205.
 }
 \author{
 Dennis Prangle

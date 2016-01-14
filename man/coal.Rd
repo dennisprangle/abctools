@@ -47,6 +47,9 @@ Molecular Biology 7 (2008)
 Nunes, M. A. and D. J. Balding `On optimal selection of summary
 statistics for approximate Bayesian computation' Statistical
 Applications in Genetics and Molecular Biology 9 (2010)
+
+Nunes, M. A. and Prangle, D. abctools: an R package for tuning
+approximate Bayesian computation analyses. The R Journal 7 (2016)
 }
 
 \keyword{datasets}
