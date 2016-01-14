@@ -2,11 +2,13 @@
 
 The `semiauto.abc` function gives more sensible results if `sumstats` is collinear.
 
+Added citations to abctools R Journal paper.
+
 ##v1.0.3
 
 The `AS.select` function now has a `trace` argument and improved trace output when it is set to true.
 
-Version used in R Journal paper (2nd submission).
+Version used in published abctools R Journal paper.
 
 ##v1.0.2
 
@@ -18,4 +20,4 @@ Minor changes to documentation
 
 ##v1.0.0
 
-Version used in R Journal paper (1st submission).
+Version used in abctools R Journal paper 1st submission.
