@@ -3,4 +3,4 @@
 # abctools
 R package providing tools for approximate Bayesian computation, including summary statistic selection and assessing coverage
 
-See package help file for more details.
+For more details see the help file and the [R journal paper](https://journal.r-project.org/archive/2015-2/nunes-prangle.pdf) on this pacakge.
