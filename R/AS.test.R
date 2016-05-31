@@ -12,8 +12,8 @@ AS.test <-function(grid=10,x1,x2,supp=NULL){
 x1<-as.matrix(x1)
 x2<-as.matrix(x2)
 
-Nkminus1<-length(x1)	#in our case, these two should be the same
-Nk<-length(x2)		#
+Nkminus1<-as.double(length(x1)) #in our case, these two should be the same
+Nk<-as.double(length(x2))       #
 
 rstar<-Ti<-Ti2<-matrix(0,1,grid)
 s<-0:grid		#makes sure that the number of bins stays at grid.
@@ -28,8 +28,8 @@ tmp1<-hist(x1,breaks=s,plot=F)
 tmp2<-hist(x2,breaks=s,plot=F)
 
 
-Nkminus1counts<-tmp1$counts
-Nkcounts<-tmp2$counts
+Nkminus1counts<-as.double(tmp1$counts)
+Nkcounts<-as.double(tmp2$counts)
 
 expected<-matrix(Nkminus1counts*Nk/Nkminus1,nrow=1)
 
