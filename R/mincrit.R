@@ -39,6 +39,9 @@ mincrit <-function (obs, param, sumstats, obspar = NULL, abcmethod = abc,
             stop("Please supply observed statistics and observed parameter matrices with the same number of rows!\n")
         }
     }
+    if (any(is.na(sumstats)) | any(is.na(param)) | any(is.na(obs))) {
+        stop("Simulations and observations must not contain NAs")
+    }
     argl$param=param
 
 if (!length(colnames(param))) {

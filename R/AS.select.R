@@ -33,6 +33,12 @@ if ((length(margind)==0)&identical(abcmethod,abc)){
     if (!is.matrix(sumstats) | is.data.frame(sumstats)) {
         sumstats <- as.matrix(sumstats)
     }
+    if (nrow(sumstats) != nrow(param)) {
+        stop("param and sumstats should be matrices/dataframes with the same number of rows.")
+    }
+    if (nrow(sumstats) <= 1 | nrow(param) <= 1) {
+        stop("Too few simulated datasets to perform ABC. The code will run with >=2, but a sensible number is at least thousands.")
+    }
     if (!is.null(obspar) | is.data.frame(obspar)) {
         if (!is.matrix(obspar)) {
             obspar <- matrix(obspar, byrow = T, ncol = ncol(param))
@@ -40,6 +46,9 @@ if ((length(margind)==0)&identical(abcmethod,abc)){
         if (nrow(obs) != nrow(obspar)) {
             stop("Please supply observed statistics and observed parameter matrices with the same number of rows!\n")
         }
+    }
+    if (any(is.na(sumstats)) | any(is.na(param)) | any(is.na(obs))) {
+        stop("Simulations and observations must not contain NAs")
     }
 
     if (!length(colnames(param))) {
