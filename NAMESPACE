@@ -1,4 +1,5 @@
 export(cov.pi, covstats.pi, cov.mc, covstats.mc, mc.ci)
+export(recalibrationABC)
 export(AS.select, AS.test, mincrit, nn.ent, rsse, saABC, selectsumm, semiauto.abc, sse, stage2)
 export(combmat, fillcomb)
 useDynLib(abctools)
@@ -6,4 +7,4 @@ import(abc,abind,plyr,parallel)
 import(stats)
 import(utils)
 import(graphics)
-
+importFrom(Hmisc, wtd.quantile)

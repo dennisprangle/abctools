@@ -1,3 +1,11 @@
+##v1.1.0
+
+`RecalibrationABC` function added.
+
+The case of a weighted ABC sample corrected in `cov.pi`.
+
+Some bugs fixed.
+
 ##v1.0.4
 
 The `semiauto.abc` function gives more sensible results if `sumstats` is collinear.

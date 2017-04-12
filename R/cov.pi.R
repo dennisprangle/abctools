@@ -1,15 +1,3 @@
-getabcout <- function(x) {
-  if (x$method == "rejection") {
-    y <- x$unadj.values
-  } else {
-    y <- x$adj.values
-  }
-  if (!is.matrix(y)) {
-    y <- matrix(y, nrow=1)
-  }
-  return(y)
-}
-
 covstats.pi <-
 function(raw, diagnostics=c("KS", "CGR"), nacc.min=20) {
   usetol <- "tol" %in% colnames(raw)
@@ -77,6 +65,7 @@ function(param, sumstat, testsets, tol, eps, diagnostics=c(), multicore=FALSE, c
   if (missing(tol) && missing(eps)) stop("Either tol or eps must be specified")
   ##INITIALISE SOME VALUES
   n <- nrow(param)
+  d <- ncol(param)
   usetol <- !missing(tol)
   ##PREPARE INPUT VALUES
   if (usetol) {
@@ -105,13 +94,25 @@ function(param, sumstat, testsets, tol, eps, diagnostics=c(), multicore=FALSE, c
       }
     }
     temp <- abc(target=sumstat[set,,drop=FALSE], param=param[-set,,drop=FALSE], sumstat=sumstat[-set,,drop=FALSE], tol=mytol, method=method, ...)
-    temp <- getabcout(temp)
-    out <- sapply(1:length(pseudo.theta0),
-                  function(j){
-                    (1 + sum(temp[,j] < pseudo.theta0[j])) / (2 + nrow(temp)) ##A robust cdf estimate (equiv to mean of Bayesian binomial rate estimate with uniform prior)
-                  })
+    nacc <- nrow(temp$unadj.values)
+
+    ##CALCULATE P-VALUES
+    out <- numeric(d)
+    if (method == "rejection") {
+         ##A robust cdf estimate (equiv to mean of Bayesian binomial rate estimate with uniform prior)
+        for (j in 1:d) {
+            out[j] <- (1 + sum(temp$unadj.values[,j] < pseudo.theta0[j]))
+        }
+        out = out / (2 + nacc)
+    } else {
+        ##Simple empirical cdf estimate for weighted output
+        for (j in 1:d) {
+            out[j] <- sum((temp$adj.values[, j] < pseudo.theta0[j]) * temp$weights)
+        }
+        out = out / sum(temp$weights)
+    }
     names(out) <- colnames(param)
-    out <- c(nacc=nrow(temp), out)
+    out <- c(nacc=nacc, out)
     return(out)
   }
   if (multicore) {
