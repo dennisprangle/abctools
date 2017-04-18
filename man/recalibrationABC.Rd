@@ -98,6 +98,7 @@
 }
 
 \examples{
+  \dontrun{
   data(musigma2)
   P <- data.frame(par.sim)
   S <- data.frame(stat.sim)
@@ -105,4 +106,5 @@
   plot(rbind(out$sample.plain[1:500,], out$sample.recal[1:500,]),
   col=c(rep("red",500), rep("blue", 500)))
   ##Red shows plain ABC sample, blue shows recalibrated output
+}
 }
