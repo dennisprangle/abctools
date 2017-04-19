@@ -271,4 +271,3 @@ int one=1;
 return F77_CALL(dnrm2)(n,x,&one);
 
 }
-

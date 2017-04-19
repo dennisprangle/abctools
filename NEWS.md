@@ -1,3 +1,7 @@
+##v1.1.1
+
+Native C routines registered (new CRAN requirement)
+
 ##v1.1.0
 
 `RecalibrationABC` function added.

@@ -6,12 +6,11 @@ n <- nrow(th)
 
 if (p == 1) {
 	t <- .C("nnone", as.double(t(th)), as.integer(n), 
-        as.integer(k), D = as.double(0), PACKAGE = "abctools")
+        as.integer(k), D = as.double(0))
 }
 else {
 	t <- .C("nnk", as.double(t(th)), as.integer(n), 
-	as.integer(p), as.integer(k), D = as.double(0), 
-	PACKAGE = "abctools")
+	as.integer(p), as.integer(k), D = as.double(0))
 }
 
 ent <- t$D
