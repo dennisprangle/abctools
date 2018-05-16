@@ -1,3 +1,7 @@
+##v1.1.2
+
+Correct package version in Rd files
+
 ##v1.1.1
 
 Native C routines registered (new CRAN requirement)
