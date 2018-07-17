@@ -1,10 +1,14 @@
+##v1.1.3
+
+Update contact email address.
+
 ##v1.1.2
 
-Correct package version in Rd files
+Correct package version in Rd files.
 
 ##v1.1.1
 
-Native C routines registered (new CRAN requirement)
+Native C routines registered (new CRAN requirement).
 
 ##v1.1.0
 
