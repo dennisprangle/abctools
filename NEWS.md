@@ -1,3 +1,7 @@
+##v1.1.4
+
+Deprecated C code fixed to pass CRAN checks, and some minor other fixes.
+
 ##v1.1.3
 
 Update contact email address.
