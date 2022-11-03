@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/dennisprangle/abctools.svg?branch=master)](https://travis-ci.org/dennisprangle/abctools)
-
 # abctools
 This R package provides tools for approximate Bayesian computation, including summary statistic selection and assessing coverage.
 
