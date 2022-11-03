@@ -59,6 +59,7 @@ approximate Bayesian computation analyses. \emph{The R Journal}
 
 \examples{
 
+\dontrun{
 data(coal)
 data(coalobs)
 
@@ -83,7 +84,6 @@ tmp$sa.info
 
 # both these functions may be problematic: 
 
-\dontrun{
  tmp<-semiauto.abc(obsstats, param, simstats,tol=.01,method="rejection",
 satr=list(unique,sum))
 }

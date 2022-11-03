@@ -68,8 +68,8 @@ approximate Bayesian computation analyses. \emph{The R Journal}
 data(coal)
 data(coalobs)
 
-param<-coal[,2]
-simstats<-coal[,4:6]
+param<-coal[1:50000,2]
+simstats<-coal[1:50000,4:6]
 
 # use matrix below just in case to preserve dimensions.
 

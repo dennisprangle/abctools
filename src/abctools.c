@@ -10,12 +10,11 @@
 #include <R_ext/Applic.h>
 #include <time.h>
 
+#include "abctools.h"
 
-void mycpyd(a,len,b)
 
-double *a,*b;
-int *len;
-{
+void mycpyd(double *a, int *len, double *b){
+
 int i;
 
 for(i=0;i<*len;i++){
@@ -26,11 +25,8 @@ for(i=0;i<*len;i++){
 
 /* ********** */
 
-void mycpyi(a,len,b)
+void mycpyi(int *a, int *len, int *b){
 
-int *a,*b;
-int *len;
-{
 int i;
 
 for(i=0;i<*len;i++){
@@ -41,9 +37,9 @@ for(i=0;i<*len;i++){
 
 /* ********** */
 
-void myrevd(double *dx,int *n,double *dy){
+void myrevd(double *dx, int *n, double *dy){
 
-int incx=-1,incy=1;
+int incx=-1, incy=1;
 
 F77_CALL(dcopy)(n,dx,&incx,dy,&incy);
 
@@ -51,11 +47,7 @@ F77_CALL(dcopy)(n,dx,&incx,dy,&incy);
 
 /* ********** */
 
-void myrevi(a,la,b)
-
-int *a,*b;
-int *la;
-{
+void myrevi(int *a, int *la, int *b){
 
 int *tmp=a+(*la-1);  /* *tmp points to the last element of "a" */
 int i;
@@ -68,18 +60,12 @@ for(i=0;i<*la;i++){
 
 /* ********** */
 
-void mysortd(a,la,sorted,order,inc)
+void mysortd(double *a, int *la, double *sorted, int *order, int *inc){
 
-double *a,*sorted;
-int *la,*order,*inc;
-{
 int i,*o=calloc(*la,sizeof(int));
 double *s=calloc(*la,sizeof(double));
 
-void mycpyd();
-void mycpyi();
-void myrevd();
-void myrevi();
+
 
 for(i=0;i<*la;i++){
     *(o+i)=(i+1);
@@ -102,12 +88,7 @@ free(s);
 
 /****************************************/
 
-void nnk(x,lx,cols,k,D)
-
-int *lx,*k,*cols;
-double *x,*D;
- 
-{
+void nnk(double *x, int *lx, int *cols, int *k, double *D){
 
 int i,j, l,m, last=*k-1;
 
@@ -123,7 +104,6 @@ double halfp=(double) p;
 	halfp*=0.5;
 double *d=calloc(en,sizeof(double));
 
-void distanceij();
 
 for(i=0;i<en;i++){
 	/* initialize */
@@ -169,14 +149,9 @@ tot=p*tot/en;
 
 /********************************/
 
-void nnone(x,lx,k,D)
+void nnone(double *x, int *lx, int *k, double *D){
 
 /* this is a fast nnk for 1 dimension */
-
-int *lx,*k;
-double *x,*D;
-
-{
 
 int i,j, one=1; 
 /* MAN 24/6/14 unused variable lxlow
@@ -192,7 +167,7 @@ double tot=0;
 int nn;
 double *d=calloc(en,sizeof(double));
 
-void mysortd();
+
 
 /* for each element in x, we only need to check the k neighbours each side, like
 in getnbrs.  Also, since we only want the distances and not the associated positions,
@@ -239,15 +214,11 @@ tot=tot/en;
 /***********************************/
 /* temporary distance function */
 
-void distanceij(x,i,j,p,d)
+void distanceij(double *x, int *i, int *j, int *p, double *d){
 
-double *x,*d;
-int *i,*j,*p;
-
-{
 double *v=calloc(*p,sizeof(double));
 
-double norm2();
+
 int k;
 
 /* p-vector of differences */
@@ -263,7 +234,7 @@ free(v);
 
 /***********************************/
 
-double norm2(double *x,int *n){
+double norm2(double *x, int *n){
 
 int one=1;
 

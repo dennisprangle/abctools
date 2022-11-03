@@ -8,8 +8,8 @@
 \tabular{ll}{
 Package: \tab abctools\cr
 Type: \tab Package\cr
-Version: \tab 1.1.3\cr
-Date: \tab 17-07-2018\cr
+Version: \tab 1.1.4\cr
+Date: \tab 31-10-2022\cr
 License: \tab GPL-2 | GPL-3\cr
 LazyLoad: \tab yes\cr
 }
@@ -42,11 +42,9 @@ tools of approximate Bayesian computation using the coverage
 property. \emph{Australian and New Zealand Journal of Statistics}
 \bold{56}, Issue 4, 309--329.
 }
-\keyword{
-  package
-  methods
-  htest
-}
+\keyword{package}
+\keyword{methods}
+\keyword{htest}
 \seealso{
   \code{\link{abc}}
 }

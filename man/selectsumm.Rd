@@ -61,6 +61,7 @@ approximate Bayesian computation analyses. \emph{The R Journal}
 
 \examples{
 
+\donttest{
 # load example data:
 
 data(coal)
@@ -77,6 +78,7 @@ tmp<-selectsumm(obsstats, param, simstats, ssmethod =AS.select, tol =.1,
 method = "rejection", allow.none = FALSE, inturn = TRUE, hcorr = TRUE)
 
 tmp$best
+}
 
 }
 

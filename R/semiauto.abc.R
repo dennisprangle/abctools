@@ -86,7 +86,7 @@ fncheck<-function(s,f,i){
 
 	te<-try(f(s),silent=TRUE)
 
-	if(class(te)=="try-error"){
+	if(is(te,"try-error")){
 		stop(paste("satr function",i,"not valid!!\n"))
 	}
 	else{
