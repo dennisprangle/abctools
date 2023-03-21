@@ -70,7 +70,7 @@ if (!length(colnames(sumstats))) {
 	do.only<-matrix(do.only,nrow=1)
     }
 
-    if (is.null(do.only)|max(do.only)>nc) {
+    if (is.null(do.only) || max(do.only)>nc) {
         do.only <- 1:nc
     }
 
