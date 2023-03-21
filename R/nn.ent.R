@@ -5,11 +5,11 @@ p <- ncol(th)
 n <- nrow(th)
 
 if (p == 1) {
-	t <- .C("nnone", as.double(t(th)), as.integer(n), 
+	t <- .C(C_nnone, as.double(t(th)), as.integer(n),
         as.integer(k), D = as.double(0))
 }
 else {
-	t <- .C("nnk", as.double(t(th)), as.integer(n), 
+	t <- .C(C_nnk, as.double(t(th)), as.integer(n),
 	as.integer(p), as.integer(k), D = as.double(0))
 }
 
