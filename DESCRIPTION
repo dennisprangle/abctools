@@ -1,8 +1,8 @@
 Package: abctools
 Type: Package
 Title: Tools for ABC Analyses
-Version: 1.1.4
-Date: 2022-10-31
+Version: 1.1.5
+Date: 2023-03-23
 Authors@R: c(person("Matt","Nunes",role=c("aut","cre"),
         email="nunesrpackages@gmail.com"),person("Dennis", "Prangle",
         role="aut",email="dennis.prangle@bristol.ac.uk"),
@@ -16,9 +16,7 @@ License: GPL (>= 2)
 LazyLoad: yes
 URL: https://github.com/dennisprangle/abctools
 BugReports: https://github.com/dennisprangle/abctools/issues
-RoxygenNote: 6.0.1
 NeedsCompilation: yes
-Packaged: 2022-11-02 08:59:17 UTC; matt
 Author: Matt Nunes [aut, cre],
   Dennis Prangle [aut],
   Guilhereme Rodrigues [ctb]
