@@ -1,14 +1,14 @@
 Package: abctools
 Type: Package
 Title: Tools for ABC Analyses
-Version: 1.1.5
-Date: 2023-03-23
-Authors@R: c(person("Matt","Nunes",role=c("aut","cre"),
-        email="nunesrpackages@gmail.com"),person("Dennis", "Prangle",
-        role="aut",email="dennis.prangle@bristol.ac.uk"),
-	person("Guilhereme", "Rodrigues", role="ctb",
-	email="guilhermeest@yahoo.com.br"))
+Version: 1.1.6
+Date: 2023-03-24
+Authors@R: c(
+    person("Matt","Nunes",role=c("aut","cre"),email="nunesrpackages@gmail.com"),
+    person("Dennis","Prangle",role="aut",email="dennis.prangle@bristol.ac.uk"),
+    person("Guilherme","Rodrigues",role="ctb",email="guilhermeest@yahoo.com.br"))
 Description: Tools for approximate Bayesian computation including summary statistic selection and assessing coverage.
+    See Nunes and Prangle (2015) <doi:10.32614/RJ-2015-030> and Rodrigues, Prangle and Sisson (2018) <doi:10.1016/j.csda.2018.04.004>.
 Depends: R (>= 2.10), abc, abind, parallel, plyr, Hmisc
 Suggests: ggplot2, abc.data
 Imports: methods
@@ -18,6 +18,6 @@ URL: https://github.com/dennisprangle/abctools
 BugReports: https://github.com/dennisprangle/abctools/issues
 NeedsCompilation: yes
 Author: Matt Nunes [aut, cre],
-  Dennis Prangle [aut],
-  Guilhereme Rodrigues [ctb]
+    Dennis Prangle [aut],
+    Guilherme Rodrigues [ctb]
 Maintainer: Matt Nunes <nunesrpackages@gmail.com>
