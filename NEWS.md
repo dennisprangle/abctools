@@ -1,3 +1,11 @@
+##v1.1.6
+
+Update CITATION to new style and add references to DESCRIPTION, to pass CRAN checks.
+
+##v1.1.5
+
+Call C code using native symbols to pass CRAN checks, and some minor other fixes.
+
 ##v1.1.4
 
 Deprecated C code fixed to pass CRAN checks, and some minor other fixes.
