@@ -4,17 +4,7 @@
 \docType{package}
 \title{Tools for ABC analyses}
 \description{Tools for approximate Bayesian computation including summary statistic selection and assessing coverage.}
-\details{
-\tabular{ll}{
-Package: \tab abctools\cr
-Type: \tab Package\cr
-Version: \tab 1.1.4\cr
-Date: \tab 31-10-2022\cr
-License: \tab GPL-2 | GPL-3\cr
-LazyLoad: \tab yes\cr
-}
 
-}
 \author{Matt Nunes and Dennis Prangle
 
 Maintainer: Matthew Nunes <m.nunes@lancaster.ac.uk>
