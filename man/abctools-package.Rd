@@ -7,7 +7,7 @@
 
 \author{Matt Nunes and Dennis Prangle
 
-Maintainer: Matthew Nunes <m.nunes@lancaster.ac.uk>
+Maintainer: Matthew Nunes <nunesrpackages@gmail.com>
 }
 \references{
 This package is described in:
