@@ -1,3 +1,7 @@
+##v1.1.7
+
+Minor fixes to package help file.
+
 ##v1.1.6
 
 Update CITATION to new style and add references to DESCRIPTION, to pass CRAN checks.
