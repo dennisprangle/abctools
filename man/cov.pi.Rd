@@ -71,8 +71,8 @@ covstats.mc(raw, index, diagnostics = c("freq", "loglik.binary",
 }
   \item{method}{
     Method used for ABC analysis.  The default is "rejection".  For
-    alternatives see \code{\link{abc}} (parameter inference) or
-    \code{\link{postpr}} (model choice).
+    alternatives see \code{\link[abc]{abc}} (parameter inference) or
+    \code{\link[abc]{postpr}} (model choice).
 }
   \item{nacc.min}{
     Minimum number of ABC acceptances required to compute diagnostics.
@@ -80,8 +80,8 @@ covstats.mc(raw, index, diagnostics = c("freq", "loglik.binary",
 }
   \item{\dots}{
     Extra arguments to be supplied to the function performing abc
-    analysis i.e. \code{\link{abc}} (parameter inference) or
-    \code{\link{postpr}} (model choice).
+    analysis i.e. \code{\link[abc]{abc}} (parameter inference) or
+    \code{\link[abc]{postpr}} (model choice).
 }
     \item{raw}{
     Raw output component from \code{cov.pi} or \code{cov.mc} for which
@@ -110,7 +110,7 @@ covstats.mc(raw, index, diagnostics = c("freq", "loglik.binary",
   are also returned which can be investigated in more detail.
   
   All ABC analyses use a rejection sampling algorithm implemented by the
-  \code{\link{abc}} package.  The user may specify regression
+  \code{abc} package.  The user may specify regression
   post-processing as part of this analysis.
 }
 \value{
@@ -152,7 +152,7 @@ Dennis Prangle
 \seealso{
   \code{\link{mc.ci}} for a diagnostic plot of raw model choice results
   
-  \code{\link{abc}} and \code{\link{postpr}} to perform ABC for a given dataset
+  \code{\link[abc]{abc}} and \code{\link[abc]{postpr}} to perform ABC for a given dataset
 }
 
 \examples{

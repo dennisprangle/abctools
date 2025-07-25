@@ -36,6 +36,6 @@ property. \emph{Australian and New Zealand Journal of Statistics}
 \keyword{methods}
 \keyword{htest}
 \seealso{
-  \code{\link{abc}}
+  \code{\link[abc]{abc}}
 }
 
